@@ -11,18 +11,6 @@
     <div>
         <img id="logo" src="./logo1.png" alt="avanthi logo">
     </div>
-    <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-<body>
-  <div id="weather-app">
-  </div>
-</body>
-</html>
     <div>
       <h1 id='welcome_note'>WELCOME TO THE DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING.</h1>
       <h2 id='nameandid'>Website Designed by: K Ajay Karthik</h2>
@@ -108,31 +96,7 @@
           <div class="mySlides fade">
             <img src="./10.jpg" style='width:100%'>
           </div>
-
-            <div class="mySlides fade">
-             <img src="./11.jpg" style='width:100%'>
-            </div>
-               
-            <div class="mySlides fade">
-             <img src="./12.jpg" style='width:100%'>
-            </div> 
-               
-            <div class="mySlides fade">
-             <img src="./13.jpg" style='width:100%'>
-            </div>
-               
-            <div class="mySlides fade">
-             <img src="./14.jpg" style='width:100%'>
-            </div>
-               
-            <div class="mySlides fade">
-             <img src="./15.JPG" style='width:100%'>
-            </div>
-               
-            <div class="mySlides fade">
-             <img src="./16.JPG" style='width:100%'>
-            </div>
-               
+          
           </div>
           <br>
           
@@ -146,13 +110,7 @@
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+            <span class="dot"></span> 
           </div>
           
           <script>
@@ -173,7 +131,7 @@
             }
             slides[slideIndex-1].style.display = "block";  
             dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 4000); // Change image every 4 seconds
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
           }
           </script>
       </body>
@@ -187,14 +145,16 @@
       var date = new Date();
       var hours = date.getHours();
       var minutes = date.getMinutes();
-
+      
+      hours = hours % 12 || 12;
+      
       if (hours > 12) {
         hours -= 12;
       }
     
       var ampm = hours >= 12 ? "AM" : "PM";
     
-      var timeString = hours + ":" + minutes + "  "  + ampm;
+      var timeString = hours + ":" + minutes + " "+ ampm;
     
       document.querySelector(".clock").innerHTML = timeString;
     
