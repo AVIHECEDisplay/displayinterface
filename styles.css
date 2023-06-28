@@ -119,18 +119,6 @@ body {
   padding: 10px;
 }
 
-#weather-app {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 10px;
-  text-shadow: 2px 1px black;
-  font-family: Roboto condensed, sans-serif;
-  color: white;
-  font-weight: bolder;
-  font-size: 20px;
-}
-
 h1 {
   position: fixed;
   font-size: 24px;
